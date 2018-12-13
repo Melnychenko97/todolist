@@ -1,0 +1,80 @@
+body{
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	}
+.to-do-list {
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	min-width: 350px;
+	height: 90vh;
+	overflow-y: auto;
+	border: 1px solid gray;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.form{
+	margin: 10px 0 0 0;
+	 width: 100%;
+}
+.input {
+	min-width: 200px;
+	text-align: center;
+	border: none;
+	border-bottom: 1px solid black;
+	font-size: 1em;
+	outline: none; 
+	font-style: italic;
+}
+.push-task {
+	margin: 0 0 0 15px;
+	width: 100px;
+	height: 45px;
+	border: 1px solid black;
+	border-radius: 5px
+	font-size: 1em;
+	outline: none; 
+	font-style: italic;
+	background: none;
+}
+.push-task:active {
+	background: lightgrey;
+}
+
+.task-list {
+	width: 100%;
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.task-content{
+	margin: 0;
+	font-size: 1.3em;
+	font-style: italic;
+	display: inline;
+	text-decoration: underline;
+}
+.crossed-out{
+	text-decoration:line-through;
+	color: gray;
+}
+.task-item {
+	height: 27px;
+	min-width: 200px;
+	display: grid;
+	grid-template-columns: 20px 1fr 25px;
+}
+.task-delete{
+	width: 25px;
+	height: 25px;
+	border: 1px solid black;
+	background: none;
+	border-radius: 50%;
+}
+
